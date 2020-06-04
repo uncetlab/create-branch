@@ -1,0 +1,20 @@
+name: "Create Branch"
+description: "Create a Branch"
+input:
+    hash:
+        description: "The commit hash you want to branch off of"
+    tag:
+        description: "The tag for the commit to start this branch at"
+    branch:
+        description: "The branch name"
+        required: true
+    silent-fail:
+        description: "Should this fail silently. default: true"
+        default: true
+    github_token :
+        description: "access token"
+        required: true
+
+runs: 
+    using: 'docker'
+    image: 'Dockerfile'

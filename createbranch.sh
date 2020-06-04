@@ -34,7 +34,7 @@ git --no-pager branch -a -vv
 
 COMMAND="git checkout $COMMIT"
 echo $COMMAND
-GO_TO_OBJECT=$(sh -c "$COMMIT")
+GO_TO_OBJECT=$(sh -c "$COMMAND")
 
 if [["$?" != "0"]]; then
   exit 1

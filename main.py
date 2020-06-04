@@ -19,6 +19,6 @@ if (not commithash is None) and (not tag is None):
 
 os.environ['COMMIT'] =  commithash if (not commithash is None) else tag
 os.environ['BRANCH'] = os.getenv("INPUT_BRANCH")
-os.system("./createtmpbranch.sh")
+os.system("/createtmpbranch.sh")
 
 

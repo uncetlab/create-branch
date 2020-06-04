@@ -8,4 +8,4 @@ ADD createtmpbranch.sh /
 
 RUN chmod 777 /createtmpbranch.sh
 
-CMD ["python","./main.py"]
+CMD ["python","/main.py"]

@@ -3,10 +3,10 @@
 
 
 set -e
-echo ">>>>>"
+echo "---"
 echo $COMMIT
 echo $BRANCH
-echo "<<<<<"
+echo "---"
 
 
 

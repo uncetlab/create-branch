@@ -1,6 +1,8 @@
 import os
 import sys
 
+print("New Action")
+
 commithash = os.getenv("INPUT_HASH")
 tag = os.getenv("INPUT_TAG")
 

@@ -1,13 +1,10 @@
 import os
 import sys
 
-print("New Action")
 
 commithash = os.getenv("INPUT_HASH")
 tag = os.getenv("INPUT_TAG")
 
-print(commithash)
-print(tag)
 
 if commithash is None and tag is None:
     print("Must provide either a commit hash or tag")
@@ -19,6 +16,6 @@ if (not commithash is None) and (not tag is None):
 
 os.environ['COMMIT'] =  commithash if (not commithash is None) else tag
 os.environ['BRANCH'] = os.getenv("INPUT_BRANCH")
-os.system("/createtmpbranch.sh")
+os.system("/createbranch.sh")
 
 

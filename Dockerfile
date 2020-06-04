@@ -4,8 +4,8 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositor
   apk add --no-cache git hub
   #Download the hub cli tool 
 ADD main.py /
-ADD createtmpbranch.sh /
+ADD createbranch.sh /
 
-RUN chmod 777 /createtmpbranch.sh
+RUN chmod 777 /createbranch.sh
 
 CMD ["python","/main.py"]

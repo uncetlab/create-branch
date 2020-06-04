@@ -6,11 +6,14 @@ print("New Action")
 commithash = os.getenv("INPUT_HASH")
 tag = os.getenv("INPUT_TAG")
 
+print(commithash)
+print(tag)
+
 if commithash == "" and tag == "":
     print("Must provide either a commit hash or tag")
     sys.exit(1)
 
-if commithash != "" and tag != "":
+if (not commithash == "") and (not tag == ""):
     print("Can not provide both a commit hash and tag")
     sys.exit(1)
 
